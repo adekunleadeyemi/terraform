@@ -1,12 +1,12 @@
 terraform {
-  required_version = ">= 0.8, < 0.9"
+  required_version = "0.12.3"
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = "eu-west-1"
 }
 
 resource "aws_instance" "example" {
-  ami           = "ami-40d28157"
+  ami           = "ami-0bbc25e23a7640b9b"
   instance_type = "t2.micro"
 }
